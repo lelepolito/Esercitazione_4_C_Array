@@ -42,11 +42,11 @@ bool  EsportaRisultato(const string& file_name, const double& S, const size_t& n
     file << fixed << setprecision(2) ;
     file << "S = "<< S  <<", n = " << n << endl;
     file << defaultfloat << setprecision(6);   
-    file << "w = [" ;
+    file << "w = [ " ;
     for (unsigned int i = 0; i < n; i++){
         file << (i != 0 ? " " : "") << w[i];
     }
-    file << "]" << endl;
+    file << " ]" << endl;
 
     file << "r = [" ;
     for (unsigned int i = 0; i < n; i++){
